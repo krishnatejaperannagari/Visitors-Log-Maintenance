@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="52139krishnatejaperannaga.VisitorsLogMaintenance" Publisher="CN=1493878B-224F-4FA6-B2E9-FAC913BAB134" Version="1.0.0.1" />
+  <Properties>
+    <DisplayName>Visitors Log Maintenance</DisplayName>
+    <PublisherDisplayName>krishna teja perannagari</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="VisitorsLogMaintenance.App">
+      <VisualElements DisplayName="Visitors Log Maintenance" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Visitors Log Maintenance is deigned to maintain log of all the people visiting Library ,hospital,office or any other place.It takes the id/name and generates in-time,out-time,in-date.out-date  and duration.We can save all these details in a csv(comma separated values) file.We can open these files later using excel and view all the details." ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" ShortName="VLM" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
